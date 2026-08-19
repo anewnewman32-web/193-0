@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>193–0 V3.14 | World Leader Draft</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header id="gameHeader" class="topbar hidden-header">
+      <div>
+        <p class="eyebrow">WORLD LEADER DRAFT • VERSION 3.14</p>
+        <h1>193–0</h1>
+      </div>
+      <div class="topbar-actions">
+        <button id="homeBtn" class="home-btn" type="button">⌂ Home</button>
+        <div class="record-box">
+          <span>BEST CAMPAIGN</span>
+          <strong id="bestRecord">0–193</strong>
+        </div>
+      </div>
+    </header>
+
+    <section id="startScreen" class="screen active landing-screen">
+      <div class="landing-emblem" aria-hidden="true">✦</div>
+      <p class="landing-kicker">A WORLD LEADER DRAFT</p>
+      <h1 class="landing-title">193–0</h1>
+      <p class="landing-subtitle">Draft six leaders. Conquer the world.</p>
+      <div class="landing-actions">
+        <button id="startBtn" class="primary-btn landing-primary" type="button">Start Draft</button>
+        <button id="rulesBtn" class="ghost-btn landing-secondary" type="button">How to Play</button>
+      </div>
+    </section>
+
+    <section id="rulesScreen" class="screen rules-screen">
+      <div class="rules-page">
+        <div class="rules-page-head">
+          <div>
+            <p class="eyebrow">FIELD MANUAL</p>
+            <h2>How to Play</h2>
+            <p class="section-sub">Everything you need to know before drafting your six.</p>
+          </div>
+          <button id="rulesBackBtn" class="ghost-btn" type="button">← Back</button>
+        </div>
+
+        <div class="rules-grid">
+          <section class="rule-section">
+            <span class="rule-number">I</span>
+            <h3>The Draft</h3>
+            <p>You draft <strong>6 leaders</strong>. Every round presents <strong>5 random choices</strong>, and you select one.</p>
+            <p>You get <strong>one respin per attempt</strong>. A respin replaces all five current choices. Anyone already shown during that attempt cannot reappear.</p>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">II</span>
+            <h3>Scouted Ratings</h3>
+            <p>Every leader has six ratings. The exact values are hidden; you only see the ten-point band they fall within, such as <strong>60–70</strong> or <strong>90–100</strong>.</p>
+            <dl class="stat-definitions">
+              <div><dt>Military</dt><dd>Command, force projection and battlefield capability.</dd></div>
+              <div><dt>Logistics</dt><dd>Moving people, supplies and resources across difficult campaigns.</dd></div>
+              <div><dt>Economy</dt><dd>Financing and sustaining a long global campaign.</dd></div>
+              <div><dt>Diplomacy</dt><dd>Coalitions, negotiation, legitimacy and political leverage.</dd></div>
+              <div><dt>Administration</dt><dd>State capacity, organization and maintaining control.</dd></div>
+              <div><dt>Adaptability</dt><dd>Responding to unfamiliar conditions and unexpected problems.</dd></div>
+            </dl>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">III</span>
+            <h3>How Your Squad Is Scored</h3>
+            <p>Your six leaders combine into one hidden team profile. The strongest leaders in a category matter most, but <strong>depth across the whole squad still contributes</strong>.</p>
+            <p><strong>Chemistry matters.</strong> Diverse strengths, good administration, logistics and diplomacy can improve the team. Overloading the squad with the same kind of leader can hurt it.</p>
+            <p>Some traits also give small situational bonuses or penalties.</p>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">IV</span>
+            <h3>The 193 Countries</h3>
+            <p>After you lock the squad, it is tested against all <strong>193 UN member states</strong>.</p>
+            <p>Each country has hidden challenge requirements across all six stats, plus two areas that matter more for that matchup. Larger, geographically difficult or especially demanding profiles tend to require stronger squads.</p>
+            <p>These values are an <strong>abstract game system</strong>, not a claim about real-world military or political strength.</p>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">V</span>
+            <h3>Winning a Country</h3>
+            <p>The game compares your team profile with that country's hidden requirements. Strong performance in the country's two focus areas receives extra weight.</p>
+            <p>A small amount of campaign uncertainty is applied, so borderline matchups can occasionally swing either way. If your final matchup score clears the hidden threshold, you earn a win.</p>
+            <div class="score-example">
+              <span>Example campaign</span>
+              <strong>187–6</strong>
+              <small>187 countries conquered · 6 defeats</small>
+            </div>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">VI</span>
+            <h3>The Goal</h3>
+            <p>Your record is the number of country matchups won and lost. <strong>193–0 is the perfect run.</strong></p>
+            <p>A high-180s run is excellent. Reaching the 190s means the squad is extremely strong. Going 193–0 requires an exceptional draft with very few weaknesses.</p>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">VII</span>
+            <h3>Packs &amp; Rarity</h3>
+            <p>The pool contains <strong>263 leaders</strong> across six themed packs: Conquerors &amp; Generals, Presidents &amp; Prime Ministers, Infamous Leaders, Current Leaders, Kings &amp; Queens, and Fictional &amp; Legendary.</p>
+            <p>For historical and current figures, rarity now reflects <strong>overall six-stat strength</strong> as well as pull frequency. The pool is ranked into Common, Uncommon, Rare and Legendary power bands. Each choice independently rolls <strong>60% Common, 24% Uncommon, 10% Rare, 5% Legendary and 1% Mythic</strong>.</p>
+          </section>
+
+          <section class="rule-section">
+            <span class="rule-number">VIII</span>
+            <h3>Randomness</h3>
+            <p>Each card slot rolls a rarity first, then chooses a person uniformly from that rarity. If someone appeared in your immediately previous attempt, the game avoids them whenever another card of that rarity is available.</p>
+            <p>There are 80 Common, 65 Uncommon, 53 Rare, 25 Legendary and 20 Mythic cards. The <strong>Fictional &amp; Legendary</strong> pack is the exception to the power rule: its cards are always Mythic and can range from disastrous to absurdly powerful.</p>
+          </section>
+        </div>
+
+        <div class="rules-footer">
+          <button id="rulesPlayBtn" class="primary-btn" type="button">Start Draft</button>
+          <button id="rulesHomeBtn" class="ghost-btn" type="button">Return to Title</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="draftScreen" class="screen">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DRAFT ROUND <span id="roundNumber">1</span> OF 6</p>
+          <h2>Choose one leader</h2>
+          <p class="section-sub">
+            Five leaders are offered each round. All six stats are shown as ranges like 60–70 or 90–100; exact numbers stay hidden. Your single respin replaces all five choices.
+          </p>
+        </div>
+        <div class="draft-actions">
+          <button id="respinBtn" class="respin-btn" type="button">
+            <span class="respin-icon" aria-hidden="true">↻</span>
+            <span id="respinText">Respin (1)</span>
+          </button>
+          <button id="restartDraftBtn" class="ghost-btn" type="button">Restart</button>
+        </div>
+      </div>
+
+      <div id="leaderChoices" class="leader-grid"></div>
+
+      <div class="squad-panel">
+        <div class="squad-title-row">
+          <h3>Your squad</h3>
+          <span id="squadCount">0 / 6</span>
+        </div>
+        <div id="squadSlots" class="squad-slots"></div>
+      </div>
+    </section>
+
+    <section id="lockScreen" class="screen">
+      <div class="lock-layout">
+        <div>
+          <p class="eyebrow">DRAFT COMPLETE</p>
+          <h2>This is your six.</h2>
+          <p class="lede">
+            Every approximate strength and weakness is visible — but the exact ratings remain unknown.
+            A balanced squad still matters much more than simply stacking famous commanders.
+          </p>
+          <div id="finalSquad" class="final-squad"></div>
+          <button id="simulateBtn" class="primary-btn danger">Attempt 193–0</button>
+        </div>
+        <div class="warning-card">
+          <span class="warning-icon">!</span>
+          <div>
+            <strong>A perfect world run should feel ridiculous.</strong>
+            <p>Even an elite squad can finish 188–5 or 191–2 if a few country profiles find its weak spots.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="result-header">
+        <p class="eyebrow">WORLD CAMPAIGN RESULT</p>
+        <h2 id="recordReveal">0–0</h2>
+        <p id="resultTagline">Evaluating your squad...</p>
+      </div>
+
+      <div id="regionSummary" class="region-summary"></div>
+      <div id="worldResults" class="world-results"></div>
+
+      <div id="postGame" class="post-game hidden">
+        <div id="analysisPanel" class="analysis-panel"></div>
+        <div id="leaderReveal" class="leader-reveal"></div>
+        <div class="result-actions">
+          <button id="playAgainBtn" class="primary-btn">Draft Again</button>
+          <button id="sameSquadBtn" class="ghost-btn">Practice Same Squad</button>
+        </div>
+        <p class="practice-note">Practice reruns do not update your best record.</p>
+      </div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
